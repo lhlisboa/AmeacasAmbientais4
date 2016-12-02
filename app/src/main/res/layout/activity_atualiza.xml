@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Descrição: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNovaDesc"
+        android:textSize="18sp"
+        android:layout_marginTop="66dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNovoEnd"
+        android:layout_below="@+id/tvNovoEnd"
+        android:layout_alignStart="@+id/txtNovaDesc" />
+
+    <TextView
+        android:text="Endereço:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNovoEnd"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtNovaDesc"
+        android:layout_alignStart="@+id/txtNovoEnd" />
+
+    <TextView
+        android:text="Impacto:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNovoImp"
+        android:layout_marginTop="13dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtNovoEnd"
+        android:layout_alignStart="@+id/txtNovoImp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNovaDesc"
+        android:layout_below="@+id/tvNovaDesc"
+        android:layout_alignStart="@+id/tvNovaDesc" />
+
+    <EditText
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNovoImp"
+        android:layout_below="@+id/tvNovoImp"
+        android:layout_alignStart="@+id/txtNovoEnd" />
+
+    <Button
+        android:text="Atualizar Informações"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAtualizar"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="103dp"
+        android:layout_below="@+id/txtNovoImp"
+        android:layout_toEndOf="@+id/txtNovoImp" />
+
+    <TextView
+        android:text="Atualização de Ameaças"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView5"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
