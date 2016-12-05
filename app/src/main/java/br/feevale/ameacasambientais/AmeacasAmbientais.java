@@ -83,7 +83,7 @@ public class AmeacasAmbientais extends Activity {
     * Começo da configuração do envio por POST
     */
 
-    public void syncOnClick(View view){
+    public void ListAmeacas(View view){
         startActivity(new Intent(this, AmeacasDBDAO.class));
     }
 

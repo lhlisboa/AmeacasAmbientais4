@@ -60,8 +60,8 @@
         android:onClick="listaAmeaca"
         android:elevation="0dp"
         android:layout_gravity="left"
-        android:layout_alignBaseline="@+id/btnAtualizar"
-        android:layout_alignBottom="@+id/btnAtualizar"/>
+        android:layout_alignBaseline="@+id/btnSinc"
+        android:layout_alignBottom="@+id/btnSinc"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -81,10 +81,11 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Alterar"
+        android:text="Sync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAtualizar"
+        android:id="@+id/btnSinc"
+        android:onClick="EnviarOnClik"
         android:layout_above="@+id/listaAmeacas"
         android:layout_centerHorizontal="true" />
 

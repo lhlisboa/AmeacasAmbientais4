@@ -94,8 +94,6 @@ public class AmeacasDBDAO extends Activity{
         return elementos;
     }
 
-
-
     //informações sobre o banco para serem usados no dbhelper
     private static final String NOME_BANCO = "ameacas.db";
     private static final String TAB_AMEACAS = "AMEACAS";
@@ -139,24 +137,6 @@ public class AmeacasDBDAO extends Activity{
         values.put(COL_IMP, a.getImp());
         db.insert(TAB_AMEACAS, null, values);
     }
-/*
-    public ArrayList<HashMap<String, String>> getAllAmeacas(){
-        ArrayList<HashMap<String, String>> wordList;
-        wordList = new ArrayList<HashMap<String, String>>();
-        String selectQuery = "SELECT * FROM ameacas";
-        Cursor cursor = db.rawQuery(selectQuery, null);
-        if(cursor.moveToFirst()){
-            do {
-                HashMap<String, String> ameacas = new HashMap<String, String>();
-                ameacas.put("Id",cursor.getString(0));
-                ameacas.put("Desc",cursor.getString(1));
-                ameacas.put("End",cursor.getString(2));
-                ameacas.put("Imp",cursor.getString(3));
-            }while(cursor.moveToNext());
-        }
-         return wordList;
-    }
-*/
 
     //recupera as ameacas cadatradas percorrendo por um array
     public List<Ameacas> recuperarAmeacas(){
